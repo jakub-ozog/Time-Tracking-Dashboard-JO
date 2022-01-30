@@ -7,5 +7,55 @@
 
 body {
     font-family: fonts.$Rubik;
-    font-size: 18px;
+    background-color: colors.$Verydarkblue;
 }
+
+main, section {
+    padding: 4em 1em;
+}
+
+
+main {
+    .report-user-data {
+        background-color: colors.$Blue;
+        padding: 2em 4em;
+        border-radius: 1em;
+
+        .report-for {
+            color: colors.$Desaturatedblue;
+            font-weight: fonts.$Medium;
+            margin-bottom: 0;
+            font-size: 1rem;
+        }
+
+        .owner-name {
+            color: colors.$PaleBlue;
+            font-weight: fonts.$Light;
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+h1 {
+    color: colors.$Blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media screen and (min-width: 1400px) {
+    
+// }

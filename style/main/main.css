@@ -4,5 +4,31 @@
 
 body {
   font-family: "Rubik", sans-serif;
-  font-size: 18px;
+  background-color: #0f1424;
+}
+
+main, section {
+  padding: 4em 1em;
+}
+
+main .report-user-data {
+  background-color: #5847eb;
+  padding: 2em 4em;
+  border-radius: 1em;
+}
+main .report-user-data .report-for {
+  color: #6f76c8;
+  font-weight: 400;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+main .report-user-data .owner-name {
+  color: #bdc1ff;
+  font-weight: 300;
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+h1 {
+  color: #5847eb;
 }/*# sourceMappingURL=main.css.map */
