@@ -1,3 +1,11 @@
+@use "../colors/colors";
+@use "../fonts/fonts";
+
 * {
     box-sizing: border-box;
+}
+
+body {
+    font-family: fonts.$Rubik;
+    font-size: 18px;
 }
