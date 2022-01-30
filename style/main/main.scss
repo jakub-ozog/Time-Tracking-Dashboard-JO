@@ -14,26 +14,49 @@ main, section {
     padding: 4em 1em;
 }
 
-
 main {
-    .report-user-data {
+    .user-section {
         background-color: colors.$Blue;
-        padding: 2em 4em;
+        padding: 2em 1em;
         border-radius: 1em;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        justify-content: center;
+        margin-bottom: -1em;
+        position: relative;
+
+        .user-photo {
+            img {
+                width: 80px;
+                border-color: #fff;
+                border-width: .3em;
+                border-style: solid;
+                border-radius: 100%;
+            }
+        }
 
         .report-for {
             color: colors.$Desaturatedblue;
             font-weight: fonts.$Medium;
-            margin-bottom: 0;
+            margin-bottom: .4em;
             font-size: 1rem;
         }
 
-        .owner-name {
+        .user-name {
             color: colors.$PaleBlue;
             font-weight: fonts.$Light;
             margin-top: 0;
             font-size: 1.5rem;
         }
+    }
+
+
+    .time-stamp {
+        background-color: colors.$Darkblue;
+        padding: 2em 1em;
+        // border-radius: 1em;
+        // background-attachment: ;
     }
 }
 

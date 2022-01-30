@@ -11,22 +11,39 @@ main, section {
   padding: 4em 1em;
 }
 
-main .report-user-data {
+main .user-section {
   background-color: #5847eb;
-  padding: 2em 4em;
+  padding: 2em 1em;
   border-radius: 1em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  justify-content: center;
+  margin-bottom: -1em;
+  position: relative;
 }
-main .report-user-data .report-for {
+main .user-section .user-photo img {
+  width: 80px;
+  border-color: #fff;
+  border-width: 0.3em;
+  border-style: solid;
+  border-radius: 100%;
+}
+main .user-section .report-for {
   color: #6f76c8;
   font-weight: 400;
-  margin-bottom: 0;
+  margin-bottom: 0.4em;
   font-size: 1rem;
 }
-main .report-user-data .owner-name {
+main .user-section .user-name {
   color: #bdc1ff;
   font-weight: 300;
   margin-top: 0;
   font-size: 1.5rem;
+}
+main .time-stamp {
+  background-color: #1c1f4a;
+  padding: 2em 1em;
 }
 
 h1 {
