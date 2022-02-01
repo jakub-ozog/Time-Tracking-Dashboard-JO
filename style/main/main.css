@@ -30,22 +30,42 @@ main .user-section .user-photo img {
   border-radius: 100%;
 }
 main .user-section .report-for {
-  color: #6f76c8;
+  color: #bdc1ff;
   font-weight: 400;
   margin-bottom: 0.4em;
   font-size: 1rem;
 }
 main .user-section .user-name {
   color: #bdc1ff;
-  font-weight: 300;
   margin-top: 0;
   font-size: 1.5rem;
+  font-weight: 400;
 }
 main .time-stamp {
   background-color: #1c1f4a;
-  padding: 2em 1em;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+main .time-stamp .time-stamp-list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding-left: 0;
+  color: #6f76c8;
+  font-size: 1.3rem;
 }
 
-h1 {
-  color: #5847eb;
+section#work .work-header {
+  background-color: #ff8c66;
+  border-radius: 1em;
+}
+section#work .work-header .work-img {
+  background-image: url(/images/icon-work.svg);
+  background-color: #ff8c66;
+  padding: 2em;
+  border-radius: 1em;
+  background-repeat: no-repeat;
+  background-position: bottom right 5%;
 }/*# sourceMappingURL=main.css.map */

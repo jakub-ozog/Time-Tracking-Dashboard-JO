@@ -37,7 +37,7 @@ main {
         }
 
         .report-for {
-            color: colors.$Desaturatedblue;
+            color: colors.$PaleBlue;
             font-weight: fonts.$Medium;
             margin-bottom: .4em;
             font-size: 1rem;
@@ -45,24 +45,53 @@ main {
 
         .user-name {
             color: colors.$PaleBlue;
-            font-weight: fonts.$Light;
             margin-top: 0;
             font-size: 1.5rem;
+            font-weight: fonts.$Medium;
         }
     }
 
-
     .time-stamp {
         background-color: colors.$Darkblue;
-        padding: 2em 1em;
-        // border-radius: 1em;
-        // background-attachment: ;
+        padding-top: 1.5em;
+        padding-bottom: 1em;
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+        
+        .time-stamp-list {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            padding-left:0;
+            color: colors.$Desaturatedblue;
+            font-size: 1.3rem;
+            
+        }        
+
     }
 }
 
-h1 {
-    color: colors.$Blue;
+
+section#work {
+    .work-header {
+        background-color: colors.$LightredWork;
+        border-radius: 1em;
+        // display: flex;
+        // flex-direction: row-reverse;
+
+
+        .work-img {
+            background-image: url(/images/icon-work.svg);
+            background-color: #ff8c66;
+            padding: 2em;
+            border-radius: 1em;
+            background-repeat: no-repeat;
+            background-position: bottom right 5%;
+        }
+
+    }
 }
+
 
 
 
