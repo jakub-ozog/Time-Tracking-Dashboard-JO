@@ -11,7 +11,7 @@ body {
 }
 
 main, section {
-    padding: 4em 1em;
+    padding: 1em 1em;
 }
 
 main {
@@ -74,22 +74,60 @@ main {
 
 section#work {
     .work-header {
-        background-color: colors.$LightredWork;
-        border-radius: 1em;
-        // display: flex;
-        // flex-direction: row-reverse;
-
-
-        .work-img {
             background-image: url(/images/icon-work.svg);
             background-color: #ff8c66;
             padding: 2em;
             border-radius: 1em;
             background-repeat: no-repeat;
             background-position: bottom right 5%;
-        }
 
     }
+
+    .work-details {
+        background-color: colors.$Darkblue;
+        border-radius:1em;
+        padding:1em;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-top: -1.5em;
+        
+.details-left {
+    color: #fff;
+
+
+    .activity-type {
+        font-size: 1.125rem;
+
+        }
+        .activity-time {
+            font-size: 2.125rem; 
+            font-weight: fonts.$Light;
+            margin-top: 0;
+        }
+}
+
+.details-right {
+    text-align: right;
+    color: colors.$PaleBlue;
+
+    .ellipsis-img {
+        width:25px
+    }
+    
+
+    .activity-last-time {
+        margin-top: 1.5em;
+        font-size: 1.125rem;
+    }
+}
+
+
+
+        
+    }
+
+
 }
 
 
