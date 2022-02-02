@@ -72,18 +72,46 @@ main {
 }
 
 
-section#work {
-    .work-header {
+section {
+
+
+    .work-bg {
             background-image: url(/images/icon-work.svg);
-            background-color: #ff8c66;
+            background-color:colors.$LightredWork;
+    }
+    .play-bg {
+            background-image: url(/images/icon-work.svg);
+            background-color: colors.$Softblue;
+    }
+    .study-bg {
+            background-image: url(/images/icon-work.svg);
+            background-color: colors.$LightredStudy;
+    }
+    .exercise-bg {
+            background-image: url(/images/icon-work.svg);
+            background-color: colors.$Limegreen;
+    }
+    .social-bg {
+            background-image: url(/images/icon-work.svg);
+            background-color: colors.$Violet;
+    }
+    .selfcare-bg {
+            background-image: url(/images/icon-work.svg);
+            background-color: colors.$Softorange;
+    }
+
+
+    .card-header {
             padding: 2em;
             border-radius: 1em;
             background-repeat: no-repeat;
             background-position: bottom right 5%;
-
     }
 
-    .work-details {
+
+
+
+    .card-details {
         background-color: colors.$Darkblue;
         border-radius:1em;
         padding:1em;
