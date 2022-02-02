@@ -62,30 +62,30 @@ section .work-bg {
   background-color: #ff8c66;
 }
 section .play-bg {
-  background-image: url(/images/icon-work.svg);
+  background-image: url(/images/icon-play.svg);
   background-color: #56c2e6;
 }
 section .study-bg {
-  background-image: url(/images/icon-work.svg);
+  background-image: url(/images/icon-study.svg);
   background-color: #ff5c7c;
 }
 section .exercise-bg {
-  background-image: url(/images/icon-work.svg);
+  background-image: url(/images/icon-exercise.svg);
   background-color: #4acf81;
 }
 section .social-bg {
-  background-image: url(/images/icon-work.svg);
+  background-image: url(/images/icon-social.svg);
   background-color: #7536d3;
 }
 section .selfcare-bg {
-  background-image: url(/images/icon-work.svg);
+  background-image: url(/images/icon-self-care.svg);
   background-color: #f1c65b;
 }
 section .card-header {
   padding: 2em;
   border-radius: 1em;
   background-repeat: no-repeat;
-  background-position: bottom right 5%;
+  background-position: bottom 40% right 5%;
 }
 section .card-details {
   background-color: #1c1f4a;

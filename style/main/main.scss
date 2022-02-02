@@ -80,23 +80,23 @@ section {
             background-color:colors.$LightredWork;
     }
     .play-bg {
-            background-image: url(/images/icon-work.svg);
+            background-image: url(/images/icon-play.svg);
             background-color: colors.$Softblue;
     }
     .study-bg {
-            background-image: url(/images/icon-work.svg);
+            background-image: url(/images/icon-study.svg);
             background-color: colors.$LightredStudy;
     }
     .exercise-bg {
-            background-image: url(/images/icon-work.svg);
+            background-image: url(/images/icon-exercise.svg);
             background-color: colors.$Limegreen;
     }
     .social-bg {
-            background-image: url(/images/icon-work.svg);
+            background-image: url(/images/icon-social.svg);
             background-color: colors.$Violet;
     }
     .selfcare-bg {
-            background-image: url(/images/icon-work.svg);
+            background-image: url(/images/icon-self-care.svg);
             background-color: colors.$Softorange;
     }
 
@@ -105,7 +105,7 @@ section {
             padding: 2em;
             border-radius: 1em;
             background-repeat: no-repeat;
-            background-position: bottom right 5%;
+            background-position: bottom 40% right 5%;
     }
 
 
