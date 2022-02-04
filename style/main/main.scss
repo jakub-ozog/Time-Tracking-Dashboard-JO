@@ -2,178 +2,173 @@
 @use "../fonts/fonts";
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: fonts.$Rubik;
-    background-color: colors.$Verydarkblue;
+  font-family: fonts.$Rubik;
+  background-color: colors.$Verydarkblue;
 }
 
-main, section {
-    padding: 1em 1em;
+main,
+section {
+  padding: 1em 1em;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 main {
-    .user-section {
-        background-color: colors.$Blue;
-        padding: 2em 1em;
-        border-radius: 1em;
-        display: flex;
-        align-items: center;
-        gap: 1em;
-        justify-content: center;
-        margin-bottom: -1em;
-        position: relative;
+  .user-section {
+    background-color: colors.$Blue;
+    padding: 2em 1em;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
+    margin-bottom: -1em;
+    position: relative;
 
-        .user-photo {
-            img {
-                width: 80px;
-                border-color: #fff;
-                border-width: .3em;
-                border-style: solid;
-                border-radius: 100%;
-            }
-        }
-
-        .report-for {
-            color: colors.$PaleBlue;
-            font-weight: fonts.$Medium;
-            margin-bottom: .4em;
-            font-size: 1rem;
-        }
-
-        .user-name {
-            color: colors.$PaleBlue;
-            margin-top: 0;
-            font-size: 1.5rem;
-            font-weight: fonts.$Medium;
-        }
+    .user-photo {
+      img {
+        width: 80px;
+        border-color: #fff;
+        border-width: 0.3em;
+        border-style: solid;
+        border-radius: 100%;
+      }
     }
 
-    .time-stamp {
-        background-color: colors.$Darkblue;
-        padding-top: 1.5em;
-        padding-bottom: 1em;
-        border-bottom-left-radius: 1em;
-        border-bottom-right-radius: 1em;
-        
-        .time-stamp-list {
-            display: flex;
-            justify-content: space-around;
-            list-style-type: none;
-            padding-left:0;
-            color: colors.$Desaturatedblue;
-            font-size: 1.3rem;
-            
-        }        
-
+    .report-for {
+      color: colors.$PaleBlue;
+      font-weight: fonts.$Medium;
+      margin-bottom: 0.4em;
+      font-size: 1rem;
     }
+
+    .user-name {
+      color: colors.$PaleBlue;
+      margin-top: 0;
+      font-size: 1.5rem;
+      font-weight: fonts.$Medium;
+    }
+  }
+
+  .time-stamp {
+    background-color: colors.$Darkblue;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+
+    .time-stamp-list {
+      display: flex;
+      justify-content: space-around;
+      list-style-type: none;
+      padding-left: 0;
+      color: colors.$Desaturatedblue;
+      font-size: 1.3rem;
+
+      li {
+        &:hover {
+          color: #fff;
+          transition: 0.8s;
+        }
+      }
+    }
+  }
 }
-
 
 section {
+  .work-bg {
+    background-image: url(/images/icon-work.svg);
+    background-color: colors.$LightredWork;
+  }
 
+  .play-bg {
+    background-image: url(/images/icon-play.svg);
+    background-color: colors.$Softblue;
+  }
 
-    .work-bg {
-            background-image: url(/images/icon-work.svg);
-            background-color:colors.$LightredWork;
+  .study-bg {
+    background-image: url(/images/icon-study.svg);
+    background-color: colors.$LightredStudy;
+  }
+
+  .exercise-bg {
+    background-image: url(/images/icon-exercise.svg);
+    background-color: colors.$Limegreen;
+  }
+
+  .social-bg {
+    background-image: url(/images/icon-social.svg);
+    background-color: colors.$Violet;
+  }
+
+  .selfcare-bg {
+    background-image: url(/images/icon-self-care.svg);
+    background-color: colors.$Softorange;
+  }
+
+  .card-header {
+    padding: 2em;
+    border-radius: 1em;
+    background-repeat: no-repeat;
+    background-position: bottom 40% right 5%;
+  }
+
+  .card-details {
+    background-color: colors.$Darkblue;
+    border-radius: 1em;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: -1.5em;
+    transition: .7s;
+
+    &:hover {
+      background-color: colors.$Desaturatedblue;
+      transition: .7s;
     }
-    .play-bg {
-            background-image: url(/images/icon-play.svg);
-            background-color: colors.$Softblue;
-    }
-    .study-bg {
-            background-image: url(/images/icon-study.svg);
-            background-color: colors.$LightredStudy;
-    }
-    .exercise-bg {
-            background-image: url(/images/icon-exercise.svg);
-            background-color: colors.$Limegreen;
-    }
-    .social-bg {
-            background-image: url(/images/icon-social.svg);
-            background-color: colors.$Violet;
-    }
-    .selfcare-bg {
-            background-image: url(/images/icon-self-care.svg);
-            background-color: colors.$Softorange;
-    }
 
+    .details-left {
+      color: #fff;
 
-    .card-header {
-            padding: 2em;
-            border-radius: 1em;
-            background-repeat: no-repeat;
-            background-position: bottom 40% right 5%;
-    }
-
-
-
-
-    .card-details {
-        background-color: colors.$Darkblue;
-        border-radius:1em;
-        padding:1em;
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        margin-top: -1.5em;
-        
-.details-left {
-    color: #fff;
-
-
-    .activity-type {
+      .activity-type {
         font-size: 1.125rem;
+      }
 
-        }
-        .activity-time {
-            font-size: 2.125rem; 
-            font-weight: fonts.$Light;
-            margin-top: 0;
-        }
-}
-
-.details-right {
-    text-align: right;
-    color: colors.$PaleBlue;
-
-    .ellipsis-img {
-        width:25px
+      .activity-time {
+        font-size: 2.125rem;
+        font-weight: fonts.$Light;
+        margin-top: 0;
+      }
     }
-    
 
-    .activity-last-time {
+    .details-right {
+      text-align: right;
+      color: colors.$PaleBlue;
+
+      .ellipsis-svg {
+          width: 25px;
+          fill: #bdc1ff;
+      }
+
+      .ellipsis-img {
+        width: 25px;
+        &:hover {
+        }
+      }
+
+      .activity-last-time {
         margin-top: 1.5em;
         font-size: 1.125rem;
+      }
     }
+  }
 }
-
-
-
-        
-    }
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // @media screen and (min-width: 1400px) {
-    
+
 // }

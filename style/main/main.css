@@ -7,8 +7,11 @@ body {
   background-color: #0f1424;
 }
 
-main, section {
+main,
+section {
   padding: 1em 1em;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 main .user-section {
@@ -56,6 +59,10 @@ main .time-stamp .time-stamp-list {
   color: #6f76c8;
   font-size: 1.3rem;
 }
+main .time-stamp .time-stamp-list li:hover {
+  color: #fff;
+  transition: 0.8s;
+}
 
 section .work-bg {
   background-image: url(/images/icon-work.svg);
@@ -95,6 +102,11 @@ section .card-details {
   justify-content: space-between;
   align-items: baseline;
   margin-top: -1.5em;
+  transition: 0.7s;
+}
+section .card-details:hover {
+  background-color: #6f76c8;
+  transition: 0.7s;
 }
 section .card-details .details-left {
   color: #fff;
@@ -110,6 +122,10 @@ section .card-details .details-left .activity-time {
 section .card-details .details-right {
   text-align: right;
   color: #bdc1ff;
+}
+section .card-details .details-right .ellipsis-svg {
+  width: 25px;
+  fill: #bdc1ff;
 }
 section .card-details .details-right .ellipsis-img {
   width: 25px;
