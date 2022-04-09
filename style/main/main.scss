@@ -192,6 +192,11 @@ div {
 
 
 @media (min-width: 768px) {
+
+.container {
+    max-width: 900px;
+}
+
     .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -204,7 +209,7 @@ div {
         display: flex;
         align-items: center;
         overflow: hidden;
-        max-width: 1180px;
+        max-width: 1440px;
         justify-content: center;
 
         main {
