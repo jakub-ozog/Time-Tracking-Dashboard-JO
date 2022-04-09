@@ -7,14 +7,12 @@
 body {
     font-family: fonts.$Rubik;
     background-color: colors.$Verydarkblue;
-}
-
-main,
-section {
-    padding: 1em 1em;
     max-width: 800px;
     margin: 0 auto;
+    padding: 4em 1em
 }
+
+
 
 main {
     .user-section {
@@ -72,12 +70,7 @@ main {
     }
 }
 
-.wrapper {
-    div {
-        padding-top: 1em;
-        padding-bottom: 1em;
-    }
-}
+
 
 div {
     .work-bg {
@@ -130,15 +123,11 @@ div {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            
+
             .activity-type {
-                font-size: 1.125rem;
+                font-size: 1.25rem;
             }
-            .activity-time {
-                font-size: 2.125rem;
-                font-weight: fonts.$Light;
-                margin-top: 0;
-            }
+            
             .ellipsis-svg {
                 width: 25px;
                 fill: #bdc1ff;
@@ -152,7 +141,12 @@ div {
             align-items: baseline;
             justify-content: space-between;
             
-            
+            .activity-time {
+                font-size: 2.125rem;
+                font-weight: fonts.$Light;
+                margin-top: 0;
+            }
+
             .activity-last-time {
                 margin-top: 1.5em;
                 color: colors.$PaleBlue;
