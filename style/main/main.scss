@@ -1,20 +1,29 @@
 @use "../colors/colors";
 @use "../fonts/fonts";
+
 * {
     box-sizing: border-box;
+
 }
 
 body {
     font-family: fonts.$Rubik;
     background-color: colors.$Verydarkblue;
+    overflow: hidden;
+
+}
+.container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 4em 1em
+    padding: 4em 2em;
+    
 }
 
 
 
 main {
+    margin-bottom: 2em;
+
     .user-section {
         background-color: colors.$Blue;
         padding: 2em 1em;
@@ -25,6 +34,7 @@ main {
         justify-content: center;
         margin-bottom: -1em;
         position: relative;
+
         .user-photo {
             img {
                 width: 80px;
@@ -34,12 +44,14 @@ main {
                 border-radius: 100%;
             }
         }
+
         .report-for {
             color: colors.$PaleBlue;
             font-weight: fonts.$Medium;
             margin-bottom: 0.4em;
             font-size: 1rem;
         }
+
         .user-name {
             color: colors.$StandardWhite;
             margin-top: 0;
@@ -47,12 +59,14 @@ main {
             font-weight: fonts.$Light;
         }
     }
+
     .time-stamp {
         background-color: colors.$Darkblue;
         padding-top: 1.5em;
         padding-bottom: 1em;
         border-bottom-left-radius: 1em;
         border-bottom-right-radius: 1em;
+
         .time-stamp-list {
             display: flex;
             justify-content: space-around;
@@ -60,6 +74,7 @@ main {
             padding-left: 0;
             color: colors.$Desaturatedblue;
             font-size: 1.3rem;
+
             li {
                 &:hover {
                     color: #fff;
@@ -70,6 +85,9 @@ main {
     }
 }
 
+.wrapper>div {
+    margin-bottom: 2em;
+}
 
 
 div {
@@ -77,32 +95,39 @@ div {
         background-image: url(/images/icon-work.svg);
         background-color: colors.$LightredWork;
     }
+
     .play-bg {
         background-image: url(/images/icon-play.svg);
         background-color: colors.$Softblue;
     }
+
     .study-bg {
         background-image: url(/images/icon-study.svg);
         background-color: colors.$LightredStudy;
     }
+
     .exercise-bg {
         background-image: url(/images/icon-exercise.svg);
         background-color: colors.$Limegreen;
     }
+
     .social-bg {
         background-image: url(/images/icon-social.svg);
         background-color: colors.$Violet;
     }
+
     .selfcare-bg {
         background-image: url(/images/icon-self-care.svg);
         background-color: colors.$Softorange;
     }
+
     .card-header {
         padding: 2em;
         border-radius: 1em;
         background-repeat: no-repeat;
         background-position: bottom 40% right 5%;
     }
+
     .card-details {
         background-color: colors.$Darkblue;
         border-radius: 1em;
@@ -127,24 +152,22 @@ div {
             .activity-type {
                 font-size: 1.25rem;
             }
-            
-            .ellipsis-svg {
-                width: 25px;
-                fill: #bdc1ff;
-            }
+
+
             .ellipsis-img {
-                width: 25px;
+                width: 15px;
             }
         }
+
         .card-time-details {
             display: flex;
             align-items: baseline;
             justify-content: space-between;
-            
+
             .activity-time {
                 font-size: 2.125rem;
                 font-weight: fonts.$Light;
-                margin-top: 0;
+                margin: 0;
             }
 
             .activity-last-time {
@@ -168,16 +191,6 @@ div {
 
 
 
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 768px) {
     .wrapper {
         display: grid;
@@ -187,17 +200,18 @@ div {
 }
 
 @media (min-width: 992px) {
-    body {
+    .container {
         display: flex;
         align-items: center;
         overflow: hidden;
-        max-width: 1100px;
-        margin: 0 auto;
-
+        max-width: 1180px;
+        justify-content: center;
 
         main {
+            margin-right: 2em;
+
             .user-section {
-                display:flex;
+                display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 padding: 2.25em 1em;
@@ -205,7 +219,8 @@ div {
                 .user-photo {
                     margin-left: 1em;
                 }
-                .user-data  {
+
+                .user-data {
                     width: 90%;
                     margin-left: 1em;
 
@@ -220,23 +235,37 @@ div {
                     flex-direction: column;
                     margin-left: 1.5em;
                     gap: 1em;
+                    font-size: 1rem;
                 }
             }
 
         }
+
+
+
         section#results {
             min-height: 100vh;
             display: flex;
             align-items: center;
+            width: 100%;
 
             .wrapper {
                 grid-template-columns: 1fr 1fr 1fr;
+                width: 100%;
+
+                div {
+                    .card-details {
+
+                        .card-time-details {
+                            flex-direction: column;
+                            .activity-last-time {
+                                font-size: .75rem;
+                            }
+
+                        }
+                    }
+                }
             }
         }
-
-
     }
-
-    
-
 }

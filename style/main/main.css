@@ -5,11 +5,18 @@
 body {
   font-family: "Rubik", sans-serif;
   background-color: hsl(226deg, 43%, 10%);
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 4em 1em;
+  overflow: hidden;
 }
 
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4em 2em;
+}
+
+main {
+  margin-bottom: 2em;
+}
 main .user-section {
   background-color: hsl(246deg, 80%, 60%);
   padding: 2em 1em;
@@ -58,6 +65,10 @@ main .time-stamp .time-stamp-list {
 main .time-stamp .time-stamp-list li:hover {
   color: #fff;
   transition: 0.8s;
+}
+
+.wrapper > div {
+  margin-bottom: 2em;
 }
 
 div .work-bg {
@@ -113,12 +124,8 @@ div .card-details .card-label {
 div .card-details .card-label .activity-type {
   font-size: 1.25rem;
 }
-div .card-details .card-label .ellipsis-svg {
-  width: 25px;
-  fill: #bdc1ff;
-}
 div .card-details .card-label .ellipsis-img {
-  width: 25px;
+  width: 15px;
 }
 div .card-details .card-time-details {
   display: flex;
@@ -128,7 +135,7 @@ div .card-details .card-time-details {
 div .card-details .card-time-details .activity-time {
   font-size: 2.125rem;
   font-weight: 300;
-  margin-top: 0;
+  margin: 0;
 }
 div .card-details .card-time-details .activity-last-time {
   margin-top: 1.5em;
@@ -144,40 +151,52 @@ div .card-details .card-time-details .activity-last-time {
   }
 }
 @media (min-width: 992px) {
-  body {
+  .container {
     display: flex;
     align-items: center;
     overflow: hidden;
-    max-width: 1100px;
-    margin: 0 auto;
+    max-width: 1180px;
+    justify-content: center;
   }
-  body main .user-section {
+  .container main {
+    margin-right: 2em;
+  }
+  .container main .user-section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 2.25em 1em;
   }
-  body main .user-section .user-photo {
+  .container main .user-section .user-photo {
     margin-left: 1em;
   }
-  body main .user-section .user-data {
+  .container main .user-section .user-data {
     width: 90%;
     margin-left: 1em;
   }
-  body main .user-section .user-data .user-name {
+  .container main .user-section .user-data .user-name {
     font-size: 2rem;
   }
-  body main .time-stamp .time-stamp-list {
+  .container main .time-stamp .time-stamp-list {
     flex-direction: column;
     margin-left: 1.5em;
     gap: 1em;
+    font-size: 1rem;
   }
-  body section#results {
+  .container section#results {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    width: 100%;
   }
-  body section#results .wrapper {
+  .container section#results .wrapper {
     grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+  }
+  .container section#results .wrapper div .card-details .card-time-details {
+    flex-direction: column;
+  }
+  .container section#results .wrapper div .card-details .card-time-details .activity-last-time {
+    font-size: 0.75rem;
   }
 }/*# sourceMappingURL=main.css.map */
