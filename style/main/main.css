@@ -103,48 +103,53 @@ div .card-details {
   background-color: hsl(235deg, 46%, 20%);
   border-radius: 1em;
   padding: 1em;
-  display: flex;
   justify-content: space-between;
   align-items: baseline;
   margin-top: -1.5em;
   transition: 0.7s;
+  color: hsl(0deg, 0%, 100%);
 }
 div .card-details:hover {
   background-color: hsl(235deg, 45%, 61%);
   transition: 0.7s;
 }
-div .card-details .details-left {
-  color: #fff;
+div .card-details .card-label {
+  color: hsl(0deg, 0%, 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-div .card-details .details-left .activity-type {
+div .card-details .card-label .activity-type {
   font-size: 1.125rem;
 }
-div .card-details .details-left .activity-time {
+div .card-details .card-label .activity-time {
   font-size: 2.125rem;
   font-weight: 300;
   margin-top: 0;
 }
-div .card-details .details-right {
-  text-align: right;
-  color: hsl(236deg, 100%, 87%);
-}
-div .card-details .details-right .ellipsis-svg {
+div .card-details .card-label .ellipsis-svg {
   width: 25px;
   fill: #bdc1ff;
 }
-div .card-details .details-right .ellipsis-img {
+div .card-details .card-label .ellipsis-img {
   width: 25px;
 }
-div .card-details .details-right .activity-last-time {
+div .card-details .card-time-details {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+div .card-details .card-time-details .activity-last-time {
   margin-top: 1.5em;
-  font-size: 1.125rem;
+  color: hsl(236deg, 100%, 87%);
 }
 
 @media (min-width: 768px) {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2em;
+    -moz-column-gap: 2em;
+         column-gap: 2em;
   }
 }
 @media (min-width: 992px) {
@@ -159,7 +164,7 @@ div .card-details .details-right .activity-last-time {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 3.25em 1em;
+    padding: 2.25em 1em;
   }
   body main .user-section .user-photo {
     margin-left: 1em;
