@@ -4,7 +4,7 @@
 
 body {
   font-family: "Rubik", sans-serif;
-  background-color: #0f1424;
+  background-color: hsl(226deg, 43%, 10%);
 }
 
 main,
@@ -15,7 +15,7 @@ section {
 }
 
 main .user-section {
-  background-color: #5847eb;
+  background-color: hsl(246deg, 80%, 60%);
   padding: 2em 1em;
   border-radius: 1em;
   display: flex;
@@ -33,19 +33,19 @@ main .user-section .user-photo img {
   border-radius: 100%;
 }
 main .user-section .report-for {
-  color: #bdc1ff;
+  color: hsl(236deg, 100%, 87%);
   font-weight: 400;
   margin-bottom: 0.4em;
   font-size: 1rem;
 }
 main .user-section .user-name {
-  color: #bdc1ff;
+  color: hsl(236deg, 100%, 87%);
   margin-top: 0;
   font-size: 1.5rem;
   font-weight: 400;
 }
 main .time-stamp {
-  background-color: #1c1f4a;
+  background-color: hsl(235deg, 46%, 20%);
   padding-top: 1.5em;
   padding-bottom: 1em;
   border-bottom-left-radius: 1em;
@@ -56,7 +56,7 @@ main .time-stamp .time-stamp-list {
   justify-content: space-around;
   list-style-type: none;
   padding-left: 0;
-  color: #6f76c8;
+  color: hsl(235deg, 45%, 61%);
   font-size: 1.3rem;
 }
 main .time-stamp .time-stamp-list li:hover {
@@ -64,38 +64,43 @@ main .time-stamp .time-stamp-list li:hover {
   transition: 0.8s;
 }
 
-section .work-bg {
+.wrapper div {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+div .work-bg {
   background-image: url(/images/icon-work.svg);
-  background-color: #ff8c66;
+  background-color: hsl(15deg, 100%, 70%);
 }
-section .play-bg {
+div .play-bg {
   background-image: url(/images/icon-play.svg);
-  background-color: #56c2e6;
+  background-color: hsl(195deg, 74%, 62%);
 }
-section .study-bg {
+div .study-bg {
   background-image: url(/images/icon-study.svg);
-  background-color: #ff5c7c;
+  background-color: hsl(348deg, 100%, 68%);
 }
-section .exercise-bg {
+div .exercise-bg {
   background-image: url(/images/icon-exercise.svg);
-  background-color: #4acf81;
+  background-color: hsl(145deg, 58%, 55%);
 }
-section .social-bg {
+div .social-bg {
   background-image: url(/images/icon-social.svg);
-  background-color: #7536d3;
+  background-color: hsl(264deg, 64%, 52%);
 }
-section .selfcare-bg {
+div .selfcare-bg {
   background-image: url(/images/icon-self-care.svg);
-  background-color: #f1c65b;
+  background-color: hsl(43deg, 84%, 65%);
 }
-section .card-header {
+div .card-header {
   padding: 2em;
   border-radius: 1em;
   background-repeat: no-repeat;
   background-position: bottom 40% right 5%;
 }
-section .card-details {
-  background-color: #1c1f4a;
+div .card-details {
+  background-color: hsl(235deg, 46%, 20%);
   border-radius: 1em;
   padding: 1em;
   display: flex;
@@ -104,33 +109,41 @@ section .card-details {
   margin-top: -1.5em;
   transition: 0.7s;
 }
-section .card-details:hover {
-  background-color: #6f76c8;
+div .card-details:hover {
+  background-color: hsl(235deg, 45%, 61%);
   transition: 0.7s;
 }
-section .card-details .details-left {
+div .card-details .details-left {
   color: #fff;
 }
-section .card-details .details-left .activity-type {
+div .card-details .details-left .activity-type {
   font-size: 1.125rem;
 }
-section .card-details .details-left .activity-time {
+div .card-details .details-left .activity-time {
   font-size: 2.125rem;
   font-weight: 300;
   margin-top: 0;
 }
-section .card-details .details-right {
+div .card-details .details-right {
   text-align: right;
-  color: #bdc1ff;
+  color: hsl(236deg, 100%, 87%);
 }
-section .card-details .details-right .ellipsis-svg {
+div .card-details .details-right .ellipsis-svg {
   width: 25px;
   fill: #bdc1ff;
 }
-section .card-details .details-right .ellipsis-img {
+div .card-details .details-right .ellipsis-img {
   width: 25px;
 }
-section .card-details .details-right .activity-last-time {
+div .card-details .details-right .activity-last-time {
   margin-top: 1.5em;
   font-size: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+  }
 }/*# sourceMappingURL=main.css.map */
